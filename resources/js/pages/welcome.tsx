@@ -7,6 +7,8 @@ export default function Welcome() {
         <PublicLayout>
             <HeroSection />
             <Example />
+            <Example />
+            <Example />
         </PublicLayout>
     )
 }

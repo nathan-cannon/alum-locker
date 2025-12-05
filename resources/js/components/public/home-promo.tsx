@@ -4,12 +4,12 @@ import { Search } from 'lucide-react';
 
 export default function HeroSection() {
     return (
-        <div className="relative overflow-hidden bg-blue-300">
+        <div className="relative overflow-hidden bg-gray-200">
             <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
                 <div className="relative px-50 sm:px-52 lg:px-54">
                     <div className="sm:max-w-lg">
                         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                            Premium Vintage Jackets
+                            Vintage Style Jackets
                         </h1>
                         <p className="mt-4 text-xl text-gray-500">
                             Officially Licensed Collegiate Jackets & Outerwear
@@ -84,20 +84,21 @@ export default function HeroSection() {
                             </div>
 
                             <div className="flex gap-4 items-center">
-                                {/* Solid White Button */}
-                                <Button asChild size="lg" className="cursor-pointer h-10 rounded-md bg-white text-gray-900 hover:bg-gray-100 px-8">
-                                    <Link href="/shop">Shop New Collection</Link>
-                                </Button>
-
                                 {/* White Outline Search */}
                                 <div className="relative w-64">
-                                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-300" />
+                                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-900" />
                                     <Input
                                         type="text"
-                                        placeholder="Shop by School"
-                                        className="pl-10 h-10 bg-gray-600 rounded-md border-white text-white placeholder:text-gray-300 focus-visible:ring-white"
+                                        placeholder="Search Schools"
+                                        className="pl-10 h-12 bg-white rounded-sm border border-gray-600 text-gray-900 font-medium placeholder:text-gray-900 focus:outline focus:outline-gray-600 focus-visible:ring-0"
                                     />
                                 </div>
+                                <Link
+                                    href="/shop"
+                                    className="text-sky-600 font-medium hover:underline"
+                                >
+                                    Shop New Collections ->
+                                </Link>
                             </div>
                         </div>
                     </div>
